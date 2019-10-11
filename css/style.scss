@@ -1,0 +1,426 @@
+$background: transparent; 
+$padding: 20px;
+$colour: #cccc00;
+$fontcolour: #fff;
+$text: center;
+$position: absolute;
+$line-height: 1.5;
+$size: 100%;
+$font: 'Open Sans', sans-serif;
+$small-device: 566px;
+$medium-device: 768px;
+$large-iphone: 896px;
+$large-device: 992px;
+$extra-large-device: 1200px;
+$small-web-browser: 800px;
+
+.navbar-header, 
+#myNavbar, 
+.container-fluid {
+     background: $background;
+     padding-top: $padding;    
+   }
+
+ .navbar-inverse
+ {
+  border: none;
+  margin:0;
+  background: $background;
+  padding-left: 20px;
+  padding-bottom: $padding;
+
+ .navbar-brand {
+   	color: $colour;
+   	font-size: 24px;
+   	font-family: 'Almendra', serif;
+   }
+}
+
+   .nav.navbar-nav 
+   li 
+   a {
+   color: $fontcolour;
+   font-size: 18px;
+   text-align: $text;
+   background: $background;
+
+   &:hover {
+   	color: $colour;
+   }
+ }
+
+ .header {
+	background-image: url('../images/background.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: $text;
+	height: $size;
+}
+
+.overlay {
+	position: $position;
+	pointer-events: none;
+	min-height: $size;
+	min-width: $size;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.title  {
+	color: $fontcolour;
+	text-align: $text;
+  width: $size;
+  padding-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  line-height: $line-height;
+  font-size: 18px;
+	font-family: 'Hammersmith One', sans-serif;
+	@media (min-width: $medium-device) {
+		font-size: 20px;
+	}
+	@media (min-width: $large-device){
+		font-size: 30px;
+	}
+	@media (min-width: $extra-large-device){
+		font-size: 40px;
+	}
+}
+
+.btn.btn-outline-secondary {
+  padding: 10px;
+  text-align: $text;
+  display: block;
+  margin: auto;
+}  
+
+#button {
+	padding-bottom: 200px;
+
+  @media (min-width: $extra-large-device){
+    padding-bottom: 500px;
+  }
+}
+
+
+
+.btn.btn-outline-secondary,
+#submit,
+a.button {
+  color: $fontcolour;
+  letter-spacing: 1px;
+  font-size: 16px;
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  background: $colour;
+  transition: all 0.3s ease 0s;
+  &:hover {
+  	color: $fontcolour;
+  	-webkit-transform: scale(0.8);
+  	-ms-transform: scale(0.8);
+  	transform: scale(0.8);
+  }
+}
+
+.skills {
+	padding: 80px;
+  font-family: $font;
+
+  @media(min-width: $extra-large-device){
+    height: 550px;
+  }
+  h1 {
+  	font-size: 28px;
+  	line-height: $line-height;
+  }
+  img {
+  	height: 90px;
+  	width:  90px;
+	  margin: 1em;
+  }
+}
+
+.row {
+	text-align: $text;
+	padding-top: 20px;
+	h1 {
+		font-size: 20px;
+	}
+}
+
+.about {
+	padding-top: 80px;
+	height: 750px;
+	background: #DCDCDC;
+  font-family: $font;
+  line-height: $line-height;
+  	@media (min-width: $small-device) {
+  		height: 650px;
+  	}
+  	@media (min-width: $medium-device){
+  		height: 630px;
+  	}
+  
+   @media (width: $small-web-browser){
+    height: 700px;
+  }
+  	@media (min-width: $extra-large-device) {
+  		height: 600px;
+  	}
+  	img {
+  		width: 180px;
+  		height: 150px;
+      border-radius: 50%;
+
+      @media(min-width: $small-device){
+      width: 150px;
+      height: 130px;
+     }
+
+  	@media(min-width: $medium-device){
+  		padding-left: 50px;
+   		width: 280px;
+  		height: 250px;
+  	 }
+  	}
+  	p {
+  		padding-top: 20px;
+  		font-size: 16px;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+  		@media (min-width: $large-device){
+  			font-size: 18px;
+  		}
+  	}
+}
+
+.portfolio {
+	padding-top: 80px;
+  	height: 700px;
+    font-family: $font;
+    @media (min-width: $small-device){
+    	height: 850px;
+    }
+    @media (min-width: $medium-device){
+    	height: 840px;
+    }
+
+    @media (min-width: $medium-device) and (orientation: landscape) {
+      height: 550px;
+    }
+
+    @media (max-width: $large-iphone) and (orientation: landscape){
+      height: 800px;
+      }
+
+     @media (width: $small-web-browser){
+    height: 940px;
+  }
+    @media (min-width: $extra-large-device){
+      height: 700px;
+    }
+}
+
+#snip1538 {
+img {
+  vertical-align: top;
+  backface-visibility: hidden;
+  padding-top: 20px;
+   height: 20rem;
+   width: 90%;
+
+  @media (min-width: $small-device) {
+  	height: 30rem;
+  	width: 80%;
+  }
+
+  @media (min-width: $medium-device){
+  	height: 30rem;
+  	width: 70%;
+  }
+
+  @media (max-width: $large-iphone) and (orientation: landscape){
+      height: 25rem;
+    width: 50%;
+    }
+
+  @media (width: $small-web-browser){
+    height: 35rem;
+    width: 60%;
+  }
+
+  @media (min-width: $large-device){
+    height: 20rem;
+    width: 100%;
+  }
+
+   @media (min-width: $extra-large-device){
+  	height: 35rem;
+  	width: 100%;
+  }
+}
+
+figcaption {
+  position: $position;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: $line-height;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: $line-height;
+  opacity: 0;
+}
+h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+}
+span {
+  display: block;
+  font-weight: 700;
+}
+a {
+  position: $position;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+&:hover > img, 
+&.hover > img {
+  opacity: 0.1;
+}
+&:hover figcaption, 
+&.hover figcaption {
+  opacity: 1;
+}
+}
+
+.contact {
+	padding-top: 80px;
+	background: #373c46;
+	height: 600px;
+  	font-family: $font;
+  	@media (min-width: $small-device){
+  	height: 650px;
+  }
+  	h1 {
+  		color: $fontcolour;
+  	}
+
+}
+
+#contacttitle {
+  color: $fontcolour;
+  font-family: $font;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+#website {
+  display: none;
+}
+
+#contactname,
+#email {
+  margin-bottom: 15px;
+  color: $fontcolour;
+  padding-left: 20px;
+  background: #2e323e;
+  height: 40px;
+  width: 250px;
+  font-size: 16px;
+  @media (min-width: $small-device){
+  	width: 350px;
+  }
+  @media (min-width: $extra-large-device){
+    width: 450px;
+  }
+}
+
+#message {
+  color: $fontcolour;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  background: #2e323e;
+  height: 100px;
+  font-size: 16px;
+  width: 250px;
+   @media (min-width: $small-device){
+  	width: 350px;
+  }
+  @media (min-width: $extra-large-device){
+    width: 450px;
+    height: 150px;
+  }
+}
+
+form {
+  text-align: $text;
+  padding-top: $padding;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input,
+select,
+textarea {
+  color: #fff;
+  &:focus {
+  	color: $fontcolour;
+  }
+}
+
+.btn.btn-primary {
+	background: $colour;
+	color: $fontcolour;
+	text-align: $text;
+	font-size: 20px;
+}
+
+#social {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: #373c46;
+  text-align: $text;
+  img {
+  height: 40px;
+}
+  p {
+	padding-top: 50px;
+	color: $fontcolour;
+	}
+ .row {
+ @media (min-width: $medium-device){
+  padding-left: 30px;
+}
+
+ @media (min-width: $medium-device) and (orientation: landscape) {
+  padding-left: 300px;
+}
+
+  @media (max-width: $large-iphone) and (orientation: landscape){
+      padding-left: 10px;
+    }
+
+   @media (width: $small-web-browser){
+    padding-left: 10px;
+  }
+
+  @media (min-width: $extra-large-device){
+    padding-left: 450px;
+  }
+}
+}
+
+
