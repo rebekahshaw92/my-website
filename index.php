@@ -1,255 +1,233 @@
 <?php include "contact.php" ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-	 <title>Rebekah Shaw | Web Developer</title>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
 
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-  <!-- Main stylesheet -->
 
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
- <!-- Bootstrap js files -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Main stylesheet -->
 
- <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Google Fonts plugin -->
 
+<!-- Google Captcha -->
+
+ <script src="https://www.google.com/recaptcha/api.js?render=6LdOYyMaAAAAAD0prrAl4_0m0lIWouzgJWAorKVm"></script>
+ 
     
-  <link href="https://fonts.googleapis.com/css?family=Kanit:900&display=swap" rel="stylesheet">
+        <title>Rebekah Shaw | Web Developer</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Almendra&display=swap" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <!-- Navbar -->
+    <header class ="header">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
 
-<link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
-</head>
-
-<!-- navbar -->
-  <header class="header">
-    <nav class="navbar navbar-inverse navbar-light bg-faded">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button 
-        type="button" 
-        class="navbar-toggle" 
-        data-toggle="collapse" 
-        data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-
-      <a class="navbar-brand" href="#home">Rebekah Shaw</a>
-
+  <div class="container">
+  
+    <a class="navbar-brand" href="#page-top">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mr-auto" id="myNavbar">
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
- <!-- Links to each section -->
 
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-         <li>
-            <a href="#skills">Skills</a>
-        </li>
-          <li>
-            <a href="#about">About</a>
-        </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-        </li>
+  <!-- Header -->
 
-          <li>
-            <a href="#contact">Contact</a>
-        </li>
-          
-        </ul>
 
-    </div>
-</nav>  
-
-<!-- Header -->
-    <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="description">
-            <h1 class="title"><span>Hello, I'm <span id = "name">Rebekah Shaw.</span> I Design Websites.</span></h1>
+  <div class="row h-100 align-items-center justify-content-center text-center">
+ 
+        <div class="col-lg-10 align-self-end">
+            <h1 class="title text-uppercase text-white font-weight-bold"><span>Hello, I'm <span id = "name">Rebekah Shaw.</span> I Design Websites.</span></h1>
+            <hr class="divider my-3" />
+</div>
             
+<div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
             <div id="button">
              <a class="btn btn-outline-secondary btn-lg" href="#portfolio">View my work</a>
         </div>
-    </div>
-  </div>
+        </div>
+</div>
     </header>
 
-    <!-- Skills -->
+    <!-- About -->
 
-    <div class="skills" id="skills">
-        <h1 class="text-center">Skills</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4
-            col-md-4 col-sm-12">
-                <img src="images/coding.png" class="img-fluid">
-                <h1>Front-end Development</h1>
-                <p>I love being able to bring ideas together in order to not only make a website but to make it user friendly on any device the user might be using.</p>
-            </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="images/php.png" class="img-fluid">
-                <h1>Back-end Development</h1>
-    <p>I love not only knowing a site looks well but also that it works well. I love being able to work on the back-end and making the site come together.</p>
-            </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="images/web.png" class="img-fluid">
-                <h1>Search Engine Optimisation</h1>
-    <p>Once a site has been made it not only needs to look good and work well, it also needs to be found by potential customer. </p>
-            </div>
-        </div> 
+    <section class="page-section" id="about">
+
+    <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+    <h2 class="text-white mt-0 font-weight-bold" id="aboutTitle">About</h2>
+    <hr class="divider my-4" />
+    <p class="text-white-50 mb-4">I am a recent Interactive Multimedia Design graduate from Ulster University with skills in Front-end Web Development, Back-end Web Developmen, Wordpress, Google Adwords and Google Analytics. I have a passion for the web and I love creating websites that allow your website to have a higher ranking on Google. While I was at University I spent my placement year working with Google Adwords and am now a registered Google Partner.</p>
     </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Skills --> 
+
+
+    <section class="page-section" id="skills">
+    <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+    <h2 class="text-black mt-0 font-weight-bold" id="aboutTitle">Skills</h2>
+    <hr class="divider my-3" />
+
+    <div class="row">
+       <div class="col-lg-4 col-md-4 text-center">
+       <i class="text-primary fa-4x fas fa-code"></i>
+       <h3>Front-end Development</h3>
+       <p class="mainText">I love being able to bring ideas together in order to not only make a website but to make it user friendly on any device the user might be using.</p>
+
 </div>
 
- <div class="about" id="about">
-        <h1 class="text-center">About</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4
-            col-md-4 col-sm-12">
-            <img src="images/me.png">
-        </div>
-          <div class="col-lg-7
-            col-md-7 col-sm-12">
-            <p>I am recent Interactive Multimedia Design graduate from Ulster University with skills in Front-end Web Development, Back-end Web Developmen, Wordpress, Google Adwords and Google Analytics. I have a passion for the web and I love creating websites that allow your website to have a higher ranking on Google. While I was at University I spent my placement year working with Google Adwords and am now a registered Google Partner.</p>
+       <div class="col-lg-4 col-md-4 text-center">
+       <i class="text-primary fa-4x fas fa-cogs"></i>
+       <h3>Back-end Development</h3>
+       <p class="mainText">I love not only knowing a site looks well but also that it works well. I love being able to work on the back-end and making the site come together.</p>
 
-        </div>
-            </div>
-        </div>
 </div>
 
- <div class="portfolio" id="portfolio">
-        <h1 class="text-center">Portfolio</h1>
-        <div class="row">
-        <div class="container-fluid">
-                   <div class="col-lg-2
-            col-md-2 col-sm-12"></div>
-                <div class="col-lg-4
-            col-md-4 col-sm-12">
-               <figure id="snip1538"> <img src="images/antrimelim.png" alt="Antrim Elim Church website">
-          <figcaption>
-    <h3>Antrim <span>Elim Church</span></h3>
+<div class="col-lg-4 col-md-4 text-center">
+       <i class="text-primary fa-4x fas fa-search"></i></i>
+       <h3>Search Engine Optimisation</h3>
+       <p class="mainText">Once a site has been made it not only needs to look good and work well, it also needs to be found by potential customer.</p>
 
-    <a href="http://antrimelimchurch.com"target="_blank"></a>
-  </figcaption>
-           </figure>
-
-        </div>
-
-          <div class="col-lg-4
-            col-md-4 col-sm-12">
-             <figure id="snip1538"><img src="images/greers.png" alt="Greers Travel Office website">
-
-        <figcaption>
-    <h3>Greers <span>Travel Office</span></h3>
- 
-
-    <a href="http://greerstravel.com"target="_blank"></a>
-  </figcaption>
-</figure>
-        </div>
-    </div>
-        </div>
-    </div>
 </div>
-<div class="contact" id="contact">
-        <h1 class="text-center">Contact</h1>
-        <div class="container-fluid">
-              <form id="contactform" method="post" action="#contact">
+</div>
+</div>
+</div>
+</div>
+</section>
 
-                <input type="text" class="form-control" id="website" name="website" />
+<section class="page-section" id="portfolio">
+<div class="container p-0">
+<div class="row no-gutters">
+<div class="col-lg-6 col-sm-3">
+  <div class="image">
+    <img class="img-fluid" src="images/antrimelim.png" alt="Antrim Elim Website" />
+                       <a class="portfolio-box" href="http://antrimelimchurch.com" target="_blank">
+                            <div class="overlay">
+                            <div class="portfolio-box-caption">
+                                <div class="project-name">Antrim Elim Church</div>
+                            </div>
+                       </a>
+                    </div>
+                  </div>
+                </div>
+                    <div class="col-lg-6 col-sm-3">
+                      <div class="image">
+                    <img class="img-fluid" src="images/greers.png" alt="Greers Travel Website" />
+                      <div class="overlay">
+                    <a class="portfolio-box" href="http://greerstravel.com" target="_blank">
+                             <div class="portfolio-box-caption">
+                                <div class="project-name">Greers Travel Office</div>
+                            </div>
+                       </a>
+                    </div>
+                    </div>
+                    </div>
 
-                <input type="text" id="contactname" name="name" placeholder="Name" required="required" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+</div>
+</div>
+</div>
+</section>
 
-                        <?php echo "<p class='text-danger'>$errorName</p>";?>
+<section class="page-section" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+      <h2 class="text-white mt-0 font-weight-bold" id="aboutTitle">Contact</h2>
+      <hr class="divider my-4" />
+      <form id="contactform" method="post" action="#contact">
 
-                        <input type="email" id="email" name="email" placeholder="Email"required="required" value="<?php echo htmlspecialchars($_POST['email']); ?>">
 
-                        <?php echo "<p class='text-danger'>$errorEmail</p>";?>
+        <input type="text" id="contactname" name="name" placeholder="Name" required="required" value="<?php echo htmlspecialchars($_POST['name']); ?>">
 
-                <textarea id="message" rows="4" name="message" placeholder="Message" required="required"></textarea>
+                <?php echo "<p class='text-danger'>$errorName</p>";?>
+
+                <input type="email" id="email" name="email" placeholder="Email"required="required" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+
+                <?php echo "<p class='text-danger'>$errorEmail</p>";?>
+
+        <textarea id="message" rows="4" name="message" placeholder="Message" required="required"></textarea>
 
 
-                <?php echo "<p class='text-danger'>$errorMessage</p>";?>
+        <?php echo "<p class='text-danger'>$errorMessage</p>";?>
 
-                <img id="captcha" src="captcha.php" alt="PHP Captcha">
-             
-                <i class="glyphicon glyphicon-repeat" id="refresh-captcha" style="color:#fff; font-size:20px; padding-left: 10px;"></i><br><br>
-                <input type="text" name="captcha-input"
-                    id="captcha-input"  placeholder="Captcha Code" required="required"> <br>
-                    <?php echo "<p class='text-danger'>$errorCaptcha</p>";?>
-
-                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-
-                            <?php echo $result; ?>
+                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary"/>
                         
-            </form>
-         </div>
-</div>
-</div>
 
-<div id="social">
-     <div class="row">
-                <div class="
-            col-md-2">
-        <div id="facebook">
-            <a href="https://www.facebook.com/rebekah.shaw.355" target="_blank" >
-                <img src="images/facebook-logo-button.png" onmouseover="this.src='images/facebook-logo-in-circular-button-outlined-social-symbol.png'" onmouseout="this.src='images/facebook-logo-button.png'" alt="" /></a>
-        </div>
-    </div>
+                    <?php echo $result; ?>
+                
+    </form>
 
-
-                <div class="col-md-2">
-        <div id="twitter">
-            <a href="https://twitter.com/x_beckyboo_x?lang=en-gb" target="_blank" >
-                <img src="images/twitter-logo-button.png" onmouseover="this.src='images/twitter-circular-button.png'" onmouseout="this.src='images/twitter-logo-button.png'" alt="" /></a>
-        </div>
-    </div>
-
-
-                <div class="col-md-2">
-        <div id="instagram">
-            <a href="https://www.instagram.com/x_beckyboo_x/?hl=en" target="_blank" >
-                <img src="images/instagram.png" onmouseover="this.src='images/instagram2.png'" onmouseout="this.src='images/instagram.png'" alt="" /></a>
-        </div>
-    </div>
-
-
-                <div class="col-md-2">
-        <div id="linkedin">
-            <a href="https://www.linkedin.com/in/rebekahshaw92/" target="_blank" >
-                <img src="images/linkedin.png" onmouseover="this.src='images/social-linkedin-circular-button.png'" onmouseout="this.src='images/linkedin.png'"  alt="" /></a>
-
-        </div>
-    </div>
+  </div>
+  </div>
+  </div>
+</section>
+          
+  </body>
+  <footer>
+    <section class="page-section" id="myFooter">
+    <div class="container">
+      <div id="social">
+      <div class="row justify-content-center">
+<div class="col-lg-1 col-sm-2">
+<a href="https://github.com/rebekahshaw92" target="_blank" >
+      <i class="mySocial fab fa-github"></i>
+</a>
       </div>
 
-    <p class="text-uppercase" id="copyright">&copy; <span id="copyright_span"></span> Rebekah Shaw All Rights Reserved</p>
+      <div class="col-lg-1 col-sm-2">
+        <a href="https://twitter.com/x_beckyboo_x?lang=en-gb" target="_blank" >
+      <i class="mySocial fab fa-twitter"></i>
+</a>
+      </div>
 
+      <div class="col-lg-1 col-sm-2">
+      <a href="https://www.instagram.com/x_beckyboo_x/?hl=en" target="_blank" >
+      <i class="mySocial fab fa-instagram">
+      </i>
+</a>
+      </div>
+
+      <div class="col-lg-1 col-sm-2">
+      <a href="https://www.linkedin.com/in/rebekahshaw92/" target="_blank" >
+      <i class="mySocial fab fa-linkedin-in"></i>
+</a>
+      </div>
 </div>
 
- <script src="js/script.js"></script>
+<p class="text-uppercase copyrightText" id="copyright">&copy; <span id="copyright_span"></span> Rebekah Shaw All Rights Reserved</p>
 
-<!-- Google Analytics -->
-
-<script>
+</div>
+</div>
+      </section>
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -260,6 +238,10 @@
 
 </script>
 
-<!-- End of Google Analytics -->
+
+        <!-- Bootstrap JS -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        
 </footer>
 </html>
