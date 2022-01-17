@@ -5313,7 +5313,7 @@ header {
 }
 @media (min-width: 576px) {
   header {
-    height: 900px;
+    height: 1000px;
   }
 }
 @media (min-width: 1400px) {
@@ -5328,7 +5328,12 @@ header {
 }
 
 .name {
-  padding-top: 100px;
+  padding-top: 300px;
+}
+@media (min-width: 992px) {
+  .name {
+    padding-top: 100px;
+  }
 }
 
 #hamburger {
