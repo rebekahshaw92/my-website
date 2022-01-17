@@ -1,0 +1,26 @@
+$green: #3bba9c;
+$darkGray: #2e3047;
+$white: #fff;
+$lightGray: #fafbff;
+
+#myFooter {
+   background-color: $lightGray;
+    overflow: hidden;
+    @media (prefers-color-scheme: dark) {
+        background-color: $darkGray;
+    }
+}
+
+.mySocial {
+    color: $green;
+    margin-top: 40px;
+    &:hover {
+        color: $darkGray;
+        @media (prefers-color-scheme: dark) {
+            color: $lightGray;
+        }
+    }
+}
+#social {
+    text-align: center;
+}
